@@ -17,8 +17,15 @@
     }
 
     #formulario {
+        padding: 10px 20px;
         float: right;
         width: 70%;
+
+        text-align: justify;
+    }
+
+    #formulario h1 {
+        margin-bottom: 20px;
     }
 }
 
@@ -39,7 +46,19 @@
     }
 
     #formulario {
+        padding: 20px;
         float: left;
         width: 50%;
+
+        text-align: justify;
+    }
+
+    #formulario h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    #formulario p {
+        font-size: 1.2em;
     }
 }
