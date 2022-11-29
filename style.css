@@ -47,7 +47,7 @@ main {
 
 #imagem {
     display: block;
-    background: #011C26 url(../imagens/predio.jpg) no-repeat;
+    background: #011C26 url(predio.jpg) no-repeat;
     background-size: cover;
     height: 200px;
 }
