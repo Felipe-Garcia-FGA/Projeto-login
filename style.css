@@ -6,7 +6,7 @@
     Laranja claro:  #F28705
     Amarelo: #F2B035
     Azul: #011C26
-    Cinza: #CFCCD9
+    Cinza: #e6e3ef
 */
 
 * {
@@ -17,7 +17,7 @@
 }
 
 body, html {
-    background-color: #F2B035;
+    background-color: #F28705;
     height: 100vh;
     width: 100vw;
 }
@@ -32,15 +32,15 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background-color: #fff;
     width: 250px;
-    height: 500px;
+    height: 520px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
 
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
@@ -63,5 +63,83 @@ main {
 }
 
 #formulario p {
+    font-size: 0.8em;
+}
+
+.campo {
+    display: block;
+    background-color: #F28705;
+    border: 2px solid #F28705;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 10px 0px;
+}
+
+.campo label {
+    display: none;
+}
+
+.campo span {
+    color: #011C26;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo input {
+    background-color: #e6e3ef;
+    font-size: 1em;
+    width: calc(100% - 44.3px);
+    height: 100%;
+    border: 0px;
+    border-radius: 6px;
+    padding: 3px;
+    transform: translateY(-13px);
+}
+
+.campo input:focus-within {
+    background-color: #fff;
+}
+
+form input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #011C26;
+    color: #e6e3ef;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    background-color: #0081b0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+}
+
+form a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 9px;
+    margin-top: 10px;
+    background-color: #e6e3ef;
+    border: 1px solid #0081b0;
+    color: #0081b0;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+form a.botao:hover {
+    background-color: #0081b0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+    color: #e6e3ef;
+}
+
+form a.botao span {
     font-size: 0.8em;
 }
